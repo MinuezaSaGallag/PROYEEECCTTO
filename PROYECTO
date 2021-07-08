@@ -1,0 +1,58 @@
+using System;
+
+namespace Proyecto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string R = "s";
+            while (R == "s")
+                Console.WriteLine("Cálculo de la Masa corporal");
+            Console.WriteLine("");
+
+            double Peso = 0;
+            double Altura = 0;
+            double mc = 0;
+
+
+            Console.Write("Ingrese el peso(en kg)  ");
+            try 
+            Console.WriteLine("Ingrese la altura(M)  ");
+            try
+            mc = Peso / (Altura * Altura);
+            mc = Math.Round(mc, 2);
+
+            if (mc <= 18)
+            {
+                Console.WriteLine("Bajo Peso," + mc + "Kg");
+
+            }
+            if (mc > 18 && mc < 25)
+              {
+                Console.WriteLine("Peso Normal," + mc + "Kg");
+
+            }
+            if (mc > 25 && mc <= 30)
+            {
+                Console.WriteLine("Sobre Peso," + mc + "Kg");
+
+            }
+            Console.WriteLine("");
+            Console.WriteLine("¿Desea hacer otro claculo? :D");
+            Console.WriteLine("s/n");
+            R = Console.ReadLine();
+            if (R == "no"|| R != "si");
+                {
+                return;
+            }
+            Console.Clear();
+
+            {
+                Console.ReadKey();
+            }
+
+       }
+    }
+}
+
