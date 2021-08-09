@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WriteAndRead
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteFile("C:\Users\Belén Minueza\Documents.txt", "hola");
+            ReadFile("C:\Users\Belén Minueza\Documents.txt");
+
+            Console.ReadKey(true);
+        }
+
+        public static void WriteFile(string file, string value)
+        {
+            StreamWriter myWriter = new StreamWriter(file, true);
+            myWriter.WriteLine(value);
+            myWriter.Close();
+        }
+
+        public static void ReadFile(string file)
+        {
+            StreamReader myReader = new StreamReader(file);
+            string line = "";
+            while (line != null)
+            {
+                line = myReader.ReadLine();
+                if (line != null)
+                    Console.WriteLine(line);
+            }
+            myReader.Close();
+        }
+    }
+}
