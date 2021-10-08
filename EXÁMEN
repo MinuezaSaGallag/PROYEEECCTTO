@@ -1,0 +1,95 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace EXAMEN
+{
+    class Menu
+    {
+        public int MenuPecera()
+        {
+            Console.WriteLine("1.  Ingresar Datos");
+            Console.WriteLine("2.  Litros");
+            Console.WriteLine("3.  Galones");
+            Console.WriteLine("4.  Salir");
+            return int.Parse();
+            string linea;
+        }
+
+
+            class Pecera
+        {
+            private double galones = 0;
+            private double litros = 0;
+
+            public void CalculoLitros(double largo, double ancho, double alto)
+            {
+                litros = largo * ancho * largo;
+            }
+
+            public double VerLitros()
+            {
+                return litros;
+            }
+
+            public double CalculoGalones()
+            {
+                litros = largo * ancho * largo;
+            }
+
+           Console.ReadKey();
+           Console.Clear();
+           Console.Write("Altura del agua máxima es de {0}: ", altura);
+           alturaAgua = double.Parse(Console.ReadLine());
+
+           areaLateral = 2 * Pi * radio * altura;
+ 
+           Console.WriteLine("Área lateral = 2 x Pi x radio x altura.");
+
+Console.WriteLine("Área lateral: {0} m^2. (Metros cuadrados). \n", areaLateral);
+
+
+Console.WriteLine("===== Área total =====");
+
+
+areaTotal = areaLateral + 2 * (Pi * (radio * radio));
+
+Console.WriteLine("Área total = Áreal lateral + 2 x (Pi x r^2)");
+
+Console.WriteLine("Área total = {0} m^2. \n", areaTotal);
+
+
+Console.WriteLine("===== Volumen =====");
+Console.WriteLine("Volumen = Pi x radio^2 x altura");
+
+
+volumen = Pi * (radio * radio) * altura;
+
+Console.WriteLine("Volumen = {0} m^3. (Metros cúbicos). \n", volumen);
+
+Console.ForegroundColor = Console.WriteLine;
+Console.WriteLine("===== Litros =====");
+Console.WriteLine("Litros = Volumen * 1000");
+Console.WriteLine("Litros = {0} m^3 * 1000", volumen);
+
+
+litros = volumen * 1000;
+
+
+
+Console.WriteLine("Litros = {0}", litros.ToString("N2") + " L.\n");
+
+
+
+
+resultadoPorcentaje = alturaAgua * (100.00 / altura);
+
+Console.ForegroundColor = ConsoleColor.Gray;
+Console.WriteLine("\n\n\nFIN DE PROGRAMA. Pulse cualquier tecla para salir.");
+
+
+
+
+        }
+    }
+}
